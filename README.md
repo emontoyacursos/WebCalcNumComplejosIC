@@ -125,6 +125,9 @@ Ver documentación: https://devcenter.heroku.com/articles/deploying-java-applica
             <groupId>com.heroku.sdk</groupId>
             <artifactId>heroku-maven-plugin</artifactId>
             <version>1.1.3</version>
+            <configuration>
+                **<appName>webcalcnumcomplejosic</appName>**
+            </configuration>
           </plugin>
         </plugins>
       </build>
