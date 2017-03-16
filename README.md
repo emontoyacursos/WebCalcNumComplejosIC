@@ -3,11 +3,11 @@
 
 ## Caso de estudio de Integración Continua, TDD, Maven, AppsWeb, QA, PaaS
 
-0. Caso de Estudio: 
+# Caso de Estudio: 
 
 Se desea desarrollar una app web que permita realizar operaciones básicas con números completos (suma, resta, multiplicación y división)
 
-1. Esta aplicación Web se desarrollará en Java (1.8) con Servlets (3.1)
+# Esta aplicación Web se desarrollará en Java (1.8) con Servlets (3.1)
 
 Se utilizará el patrón MVC teniendo:
 
@@ -23,7 +23,7 @@ Se utilizará el patrón MVC teniendo:
   
  **Modelo:** Se tendra un objeto NumComplejo.java que tendrá la lógica de negocio y datos.
  
-2. Crear el proyecto en GitHub (este es el repo del proyecto):
+# Crear el proyecto en GitHub (este es el repo del proyecto):
 
 [GitHub https://github.com/emontoyacursos/WebCalcNumComplejosIC.git](https://github.com/emontoyacursos/WebCalcNumComplejosIC.git)
  
