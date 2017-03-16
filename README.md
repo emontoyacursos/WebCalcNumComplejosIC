@@ -34,15 +34,17 @@ Se utilizará el patrón MVC teniendo:
 
 se descarga de: [maven](http://maven.apache.org)
 
-se descomprime en MAVEN_HOME=(dir)
-dir linux: /usr/local/apache-maven-3.3.9
-dir windows: c:\Program Files\apache-maven-3.3.9
+    se descomprime en MAVEN_HOME=(dir)
+    dir linux: /usr/local/apache-maven-3.3.9
+    dir windows: c:\Program Files\apache-maven-3.3.9
 
 tener en cuenta:
 ** actualizar el PATH, ej:linux,
+
     $ export PATH=$PATH:$MAVEN_HOME/bin
     
 **  ej: windows, 
+
     $ c:\>PATH=%PATH%;%MAVEN_HOME%/bin
                         
 se recomienda actualizar el PATH y MAVEN_HOME de forma permanente en el sistema
