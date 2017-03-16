@@ -186,6 +186,28 @@ Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" e
     $ cd webcalcnumcomplejosic
     $ mvn clean heroku:deploy
     
-    
-      
+# Deploy en Tomcat 8.0.27
+
+Se tiene un servidor tomcat instalado en: 10.131.137.239:8080
+
+Se tiene creado el usuario "tomcat", password "s3cret", con los roles: "manager-gui" y "manager-script"
+
+    // file: TOMCAT_HOME/conf/tomcat-users.xml
+    <role rolename="manager-gui"/>
+    <role rolename="manager-script"/> 
+    <user username="tomcat" password="s3cret" roles="manager-gui,manager-script"/>
+
+Adicione las credenciales del servidor en MAVEN_HOME/conf/settings.xml:
+
+    // file: MAVEN_HOME/conf/settings.xml
+    <servers>
+      ...
+      <server>
+          <id>TomcatServer</id>
+          <username>tomcat</username>
+          <password>s3cret</password>
+      </server>
+      ...
+    </servers>
+
     
