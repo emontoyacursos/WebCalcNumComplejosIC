@@ -114,7 +114,7 @@ pom.xml:
 
 Ver documentación: https://devcenter.heroku.com/articles/deploying-java-applications-with-the-heroku-maven-plugin
 
-## Adicionar el plugin al pom.xml:
+## Adicionar el plugin al pom.xml y la ref a la aplicación en heroku:
 
     <project>
       ...
@@ -133,5 +133,11 @@ Ver documentación: https://devcenter.heroku.com/articles/deploying-java-applica
       </build>
     </project>
       
+ ## realizar el Deployment a heroku:
+ 
+    $ cd webcalcnumcomplejosic
+    $ mvn clean heroku:deploy
+    
+    
       
     
