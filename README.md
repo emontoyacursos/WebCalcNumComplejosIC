@@ -73,7 +73,10 @@ crear una app:
       Creating webcalcnumcomplejosic... done
       https://webcalcnumcomplejosic.herokuapp.com/ | https://git.heroku.com/webcalcnumcomplejosic.git
       
-      
+# 7. Crear el esqueleto de la aplicación con Maven:
+
+    $ mvn archetype:generate -DgroupId=co.edu.eafit -DartifactId=webcalcnumcomplejosic -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
       
       
       
