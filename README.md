@@ -133,7 +133,7 @@ Ver documentación: https://devcenter.heroku.com/articles/deploying-java-applica
       </build>
     </project>
 
-## Utilizar un java-runner para probar la app local:
+## Utilizar un java-runner para probar la app local como alternativa a un Tomcat local:
 
 ver: https://devcenter.heroku.com/articles/java-webapp-runner
 
