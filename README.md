@@ -3,11 +3,11 @@
 
 ## Caso de estudio de Integración Continua, TDD, Maven, AppsWeb, QA, PaaS
 
-# Caso de Estudio: 
+# 1. Caso de Estudio: 
 
 Se desea desarrollar una app web que permita realizar operaciones básicas con números completos (suma, resta, multiplicación y división)
 
-# Esta aplicación Web se desarrollará en Java (1.8) con Servlets (3.1)
+# 2. Esta aplicación Web se desarrollará en Java (1.8) con Servlets (3.1)
 
 Se utilizará el patrón MVC teniendo:
 
@@ -23,11 +23,11 @@ Se utilizará el patrón MVC teniendo:
   
  **Modelo:** Se tendra un objeto NumComplejo.java que tendrá la lógica de negocio y datos.
  
-# Crear el proyecto en GitHub (este es el repo del proyecto):
+# 3. Crear el proyecto en GitHub (este es el repo del proyecto):
 
 [GitHub https://github.com/emontoyacursos/WebCalcNumComplejosIC.git](https://github.com/emontoyacursos/WebCalcNumComplejosIC.git)
  
-# Ambiente de Desarrollo:
+# 4. Ambiente de Desarrollo:
 
 * Se utilizará NetBeans 8.2 + tomcat 8.0.27 para pruebas locales del desarrollador
 * Se utilizará MAVEN
@@ -52,3 +52,8 @@ tener en cuenta:
 se recomienda actualizar el PATH y MAVEN_HOME de forma permanente en el sistema
 (ej: linux, actualizar el /etc/profile o windows: propiedades avanzadas del sistema->variables de entorno)
 
+# 5. Instalar las herramientas de git y heroku-cli
+
+    $ sudo yum install git
+    
+descargar heroku-cli de: https://devcenter.heroku.com/articles/heroku-cli
