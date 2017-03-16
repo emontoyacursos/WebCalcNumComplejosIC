@@ -21,4 +21,10 @@ Se utilizará el patrón MVC teniendo:
   . Realiza algun procesamiento
   . Envia la respuesta HTML al browser.
   
- **Modelo:** 
+ **Modelo:** Se tendra un objeto NumComplejo.java que tendrá la lógica de negocio y datos.
+ 
+2. Crear el proyecto en GitHub (este es el repo del proyecto):
+
+http://github.com - automatic!
+[GitHub](http://github.com)
+ 
