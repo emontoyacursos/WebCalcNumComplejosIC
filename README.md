@@ -127,6 +127,9 @@ Ver documentación: https://devcenter.heroku.com/articles/deploying-java-applica
             <version>1.1.3</version>
             <configuration>
                 <appName>webcalcnumcomplejosic</appName>
+                <processTypes>
+                    <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+                </processTypes>
             </configuration>
           </plugin>
         </plugins>
