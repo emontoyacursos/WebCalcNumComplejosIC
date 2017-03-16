@@ -112,7 +112,23 @@ pom.xml:
 
 # 8. Adicionar el pluging de heroku a Maven (al pom.xml) para desplegar la app en Heroku.
 
+Ver documentación: https://devcenter.heroku.com/articles/deploying-java-applications-with-the-heroku-maven-plugin
 
+## Adicionar el plugin al pom.xml:
+
+    <project>
+      ...
+      <build>
+        ...
+        <plugins>
+          <plugin>
+            <groupId>com.heroku.sdk</groupId>
+            <artifactId>heroku-maven-plugin</artifactId>
+            <version>1.1.3</version>
+          </plugin>
+        </plugins>
+      </build>
+    </project>
       
       
     
