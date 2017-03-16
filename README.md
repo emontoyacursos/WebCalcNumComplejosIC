@@ -27,3 +27,9 @@ Se utilizará el patrón MVC teniendo:
 
 [GitHub https://github.com/emontoyacursos/WebCalcNumComplejosIC.git](https://github.com/emontoyacursos/WebCalcNumComplejosIC.git)
  
+# Ambiente de Desarrollo:
+
+* Se utilizará NetBeans 8.2 + tomcat 8.0.27 para pruebas locales del desarrollador
+* Se utilizará MAVEN
+
+se descarga de: [maven](http://maven.apache.org)
