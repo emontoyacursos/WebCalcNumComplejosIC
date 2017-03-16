@@ -70,6 +70,8 @@ crear una app:
       pass: ******
       
       $ heroku create webcalcnumcomplejosic
+      Creating webcalcnumcomplejosic... done
+      https://webcalcnumcomplejosic.herokuapp.com/ | https://git.heroku.com/webcalcnumcomplejosic.git
       
       
       
