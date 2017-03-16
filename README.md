@@ -11,9 +11,9 @@ Se desea desarrollar una app web que permita realizar operaciones básicas con n
 
 Se utilizará el patrón MVC teniendo:
 
-*Vista:* Página HTML o JSP (index.html o index.jsp)
+**Vista:** Página HTML o JSP (index.html o index.jsp)
 
-*Controlador:* Clase CalcServlet.java
+**Controlador:** Clase CalcServlet.java
 
   Este controlador, básicamente realiza:
   
@@ -21,4 +21,4 @@ Se utilizará el patrón MVC teniendo:
   . Realiza algun procesamiento
   . Envia la respuesta HTML al browser.
   
- *Modelo:* 
+ **Modelo:** 
