@@ -39,8 +39,11 @@ dir linux: /usr/local/apache-maven-3.3.9
 dir windows: c:\Program Files\apache-maven-3.3.9
 
 tener en cuenta:
-** actualizar el PATH (ej:linux, $ export PATH=$PATH:$MAVEN_HOME/bin
-**                        ej: windows, c:\>PATH=%PATH%;%MAVEN_HOME%/bin
+** actualizar el PATH, ej:linux,
+    $ export PATH=$PATH:$MAVEN_HOME/bin
+    
+**  ej: windows, 
+    $ c:\>PATH=%PATH%;%MAVEN_HOME%/bin
                         
 se recomienda actualizar el PATH y MAVEN_HOME de forma permanente en el sistema
 (ej: linux, actualizar el /etc/profile o windows: propiedades avanzadas del sistema->variables de entorno)
