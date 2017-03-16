@@ -132,8 +132,43 @@ Ver documentación: https://devcenter.heroku.com/articles/deploying-java-applica
         </plugins>
       </build>
     </project>
-      
- ## realizar el Deployment a heroku:
+
+## Utilizar un java-runner para probar la app local:
+
+ver: https://devcenter.heroku.com/articles/java-webapp-runner
+
+Debe agregar al pom.xml
+
+    <build>
+        ...
+        <plugins>
+            ...
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals><goal>copy</goal></goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.github.jsimone</groupId>
+                                    <artifactId>webapp-runner</artifactId>
+                                    <version>8.5.11.2</version>
+                                    <destFileName>webapp-runner.jar</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+
+## realizar el Deployment a heroku:
  
     $ cd webcalcnumcomplejosic
     $ mvn clean heroku:deploy
