@@ -57,3 +57,22 @@ se recomienda actualizar el PATH y MAVEN_HOME de forma permanente en el sistema
     $ sudo yum install git
     
 descargar heroku-cli de: https://devcenter.heroku.com/articles/heroku-cli
+
+# 6. Crear una cuenta en heroku y crear la app para este proyecto
+
+http://www.heroku.com, crear una cuenta
+
+crear una app:
+
+      $ heroku login
+      Enter your Heroku credentials:
+      email: edwin.montoya@gmail.com
+      pass: ******
+      
+      $ heroku create webcalcnumcomplejosic
+      
+      
+      
+      
+      
+    
