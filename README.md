@@ -171,7 +171,13 @@ compilar, generar war y correr:
 
     $ mvn package
     $ java -jar target/dependency/webapp-runner.jar target/*.war
-    
+
+Crear un "Procfile"
+
+Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" en la raiz del proyecto. Cree una linea:
+
+    web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
+
 ## realizar el Deployment a heroku:
  
     $ cd webcalcnumcomplejosic
