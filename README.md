@@ -103,6 +103,12 @@ pom.xml:
       </build>
     </project>
 
+# 8. Build de la app -> generar el war para ser desplegado en tomcat y heroku:
+
+    $ cd webcalcnumcomplejosic
+    $ mvn install
+    
+    target/webcalcnumcomplejosic.war
 
 # 8. Adicionar el pluging de heroku a Maven (al pom.xml) para desplegar la app en Heroku.
 
