@@ -167,7 +167,11 @@ Debe agregar al pom.xml
         </plugins>
     </build>
 
+compilar, generar war y correr:
 
+    $ mvn package
+    $ java -jar target/dependency/webapp-runner.jar target/*.war
+    
 ## realizar el Deployment a heroku:
  
     $ cd webcalcnumcomplejosic
