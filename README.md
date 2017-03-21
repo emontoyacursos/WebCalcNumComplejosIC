@@ -3,7 +3,7 @@
 
 ## Caso de estudio de Integración Continua, TDD, Maven, AppsWeb, QA, PaaS
 
-#1. Caso de Estudio:#
+# 1. Caso de Estudio:#
 
 Se desea desarrollar una app web que permita realizar operaciones básicas con números completos (suma, resta, multiplicación y división)
 
