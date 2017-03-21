@@ -55,29 +55,8 @@ se recomienda actualizar el PATH y MAVEN_HOME de forma permanente en el sistema
 # 5. Instalar las herramientas de git
 
     $ sudo yum install git
-    
-# 6. Despliegue en nube PaaS HEROKU#
 
-##heroku-cli##
-    
-descargar heroku-cli de: https://devcenter.heroku.com/articles/heroku-cli
-
-##Crear una cuenta en heroku y crear la app para este proyecto##
-
-http://www.heroku.com, crear una cuenta
-
-crear una app:
-
-      $ heroku login
-      Enter your Heroku credentials:
-      email: edwin.montoya@gmail.com
-      pass: ******
-      
-      $ heroku create webcalcnumcomplejosic
-      Creating webcalcnumcomplejosic... done
-      https://webcalcnumcomplejosic.herokuapp.com/ | https://git.heroku.com/webcalcnumcomplejosic.git
-      
-# 7. Crear el esqueleto de la aplicación con Maven:
+# 6. Crear el esqueleto de la aplicación con Maven:
 
     $ mvn archetype:generate -DgroupId=co.edu.eafit -DartifactId=webcalcnumcomplejosic -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
@@ -107,6 +86,39 @@ pom.xml:
       </build>
     </project>
 
+Adicionar la dependencia de servlets, adicione en el pom.xml la siguiente dependencia:
+
+    <dependencies>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+# 6. Despliegue en nube PaaS HEROKU#
+
+##heroku-cli##
+    
+descargar heroku-cli de: https://devcenter.heroku.com/articles/heroku-cli
+
+##Crear una cuenta en heroku y crear la app para este proyecto##
+
+http://www.heroku.com, crear una cuenta
+
+crear una app:
+
+      $ heroku login
+      Enter your Heroku credentials:
+      email: edwin.montoya@gmail.com
+      pass: ******
+      
+      $ heroku create webcalcnumcomplejosic
+      Creating webcalcnumcomplejosic... done
+      https://webcalcnumcomplejosic.herokuapp.com/ | https://git.heroku.com/webcalcnumcomplejosic.git
+      
+
 # 8. Build de la app -> generar el war para ser desplegado en tomcat y heroku:
 
     $ cd webcalcnumcomplejosic
@@ -114,7 +126,7 @@ pom.xml:
     
     target/webcalcnumcomplejosic.war
 
-# 9. Adicionar el pluging de heroku a Maven (al pom.xml) para desplegar la app en Heroku.
+## Adicionar el pluging de heroku a Maven (al pom.xml) para desplegar la app en Heroku.
 
 Ver documentación: https://devcenter.heroku.com/articles/deploying-java-applications-with-the-heroku-maven-plugin
 
@@ -192,16 +204,7 @@ Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" e
     
 # Deploy en Tomcat 8.0.27 ##
 
-Para permitir servlets, adicione en el pom.xml la siguiente dependencia:
 
-    <dependencies>
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
-            <version>7.0</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 
 Se tiene un servidor tomcat instalado en: 10.131.137.239:8080
 
