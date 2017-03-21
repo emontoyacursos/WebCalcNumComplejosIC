@@ -291,6 +291,8 @@ Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" e
 
 ## con refactoring:
 
+//TestNumComplejos
+
 	public class TestNumComplejos {
 	@Test
 	public void testSumaComplejos() {
@@ -304,7 +306,7 @@ Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" e
 	}
 	}
 
-
+//NumComplejos
 
 	public class NumComplejos {
 		float r, i;
