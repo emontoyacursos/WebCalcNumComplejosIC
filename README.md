@@ -291,6 +291,21 @@ Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" e
 
 ## con refactoring:
 
+	public class TestNumComplejos {
+	@Test
+	public void testSumaComplejos() {
+		NumComplejos c1 = new NumComplejos(10,2);
+		NumComplejos c2 = new NumComplejos(3,-2);
+		NumComplejos c3 = c1.add(c2);
+		float r_expected = 13;
+		float i_expected = 0;
+		assertEquals(r_expected, c3.getR(),0);
+		assertEquals(i_expected, c3.getI(),0);
+	}
+	}
+
+
+
 	public class NumComplejos {
 		float r, i;
 
