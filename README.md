@@ -52,9 +52,13 @@ tener en cuenta:
 se recomienda actualizar el PATH y MAVEN_HOME de forma permanente en el sistema
 (ej: linux, actualizar el /etc/profile o windows: propiedades avanzadas del sistema->variables de entorno)
 
-# 5. Instalar las herramientas de git y heroku-cli
+# 5. Instalar las herramientas de git
 
     $ sudo yum install git
+    
+#6. Despliegue en nube PaaS HEROKU#
+
+##heroku-cli##
     
 descargar heroku-cli de: https://devcenter.heroku.com/articles/heroku-cli
 
