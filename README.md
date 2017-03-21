@@ -233,12 +233,17 @@ Debe agregar al pom.xml
         </plugins>
     </build>
 
-compilar, generar war y correr:
+compilar, generar war:
 
     $ mvn package
-    $ java -jar target/dependency/webapp-runner.jar target/*.war
+    
+Ejecuta el miniservidor local:
 
-Crear un "Procfile"
+    $ java -jar target/dependency/webapp-runner.jar target/*.war
+    
+    desde un browser, conentese a: http://localhost:8080
+
+Para desplegar en Heroku, debe crear un "Procfile":
 
 Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" en la raiz del proyecto. Cree una linea:
 
