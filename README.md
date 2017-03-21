@@ -240,3 +240,13 @@ Se adiciona el plugin al pom.xml
             <path>/${project.build.finalName}</path>
           </configuration>
       </plugin>
+
+Se realiza el despliegue:
+
+    $ mvn clean tomcat7:deploy
+    
+pruebe desde un browser:
+
+    http://10.131.137.239:8080/webcalnumcomplejosic
+    
+    
