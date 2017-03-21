@@ -202,9 +202,7 @@ Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" e
     $ cd webcalcnumcomplejosic
     $ mvn clean heroku:deploy
     
-# Deploy en Tomcat 8.0.27 ##
-
-
+# Deploy en Tomcat 8.0.27 #
 
 Se tiene un servidor tomcat instalado en: 10.131.137.239:8080
 
@@ -228,4 +226,15 @@ Adicione las credenciales del servidor en MAVEN_HOME/conf/settings.xml:
       ...
     </servers>
 
-    
+Se adiciona el plugin al pom.xml
+
+      <plugin>
+          <groupId>org.apache.tomcat.maven</groupId>
+          <artifactId>tomcat7-maven-plugin</artifactId>
+          <version>2.2</version>
+          <configuration>
+            <url>http://10.131.137.239:8080/manager/text</url>
+            <server>TomcatServer</server> <!-- configuration on MAVEN_HOME/conf/settings.xml -->
+            <path>/${project.build.finalName}</path>
+          </configuration>
+      </plugin>
