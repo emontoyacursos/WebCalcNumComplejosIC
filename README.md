@@ -106,13 +106,13 @@ pom.xml:
     
     target/webcalcnumcomplejosic.war
 
-# 6. Despliegue en nube PaaS HEROKU#
+# 7. Despliegue en nube PaaS HEROKU#
 
-##heroku-cli##
+## heroku-cli ##
     
 descargar heroku-cli de: https://devcenter.heroku.com/articles/heroku-cli
 
-##Crear una cuenta en heroku y crear la app para este proyecto##
+## Crear una cuenta en heroku y crear la app para este proyecto ##
 
 http://www.heroku.com, crear una cuenta
 
@@ -204,7 +204,7 @@ Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" e
     $ cd webcalcnumcomplejosic
     $ mvn clean heroku:deploy
     
-# Deploy en Tomcat 8.0.27 #
+# 8.Deploy en Tomcat 8.0.27 #
 
 Se tiene un servidor tomcat instalado en: 10.131.137.239:8080
 
