@@ -1,13 +1,13 @@
-# WebCalcNumComplejosIC
-# Autor: Edwin Montoya - emontoya@eafit.edu.co, Universidad EAFIT
+# WebCalcNumComplejosIC #
+## Autor: Edwin Montoya - emontoya@eafit.edu.co, Universidad EAFIT ##
 
 ## Caso de estudio de Integración Continua, TDD, Maven, AppsWeb, QA, PaaS
 
-# 1. Caso de Estudio: 
+# 1. Caso de Estudio: #
 
 Se desea desarrollar una app web que permita realizar operaciones básicas con números completos (suma, resta, multiplicación y división)
 
-# 2. Esta aplicación Web se desarrollará en Java (1.8) con Servlets (3.1)
+# 2. Esta aplicación Web se desarrollará en Java (1.8) con Servlets (3.1) #
 
 Se utilizará el patrón MVC teniendo:
 
@@ -186,7 +186,18 @@ Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" e
     $ cd webcalcnumcomplejosic
     $ mvn clean heroku:deploy
     
-# Deploy en Tomcat 8.0.27
+# Deploy en Tomcat 8.0.27 ##
+
+Para permitir servlets, adicione en el pom.xml la siguiente dependencia:
+
+    <dependencies>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
 Se tiene un servidor tomcat instalado en: 10.131.137.239:8080
 
