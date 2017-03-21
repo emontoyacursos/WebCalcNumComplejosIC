@@ -11,17 +11,17 @@ Se desea desarrollar una app web que permita realizar operaciones básicas con n
 
 Se utilizará el patrón MVC teniendo:
 
-**Vista:** Página HTML o JSP (index.html o index.jsp)
+* Vista: Página HTML o JSP (index.html o index.jsp)
 
-**Controlador:** Clase CalcServlet.java
+* Controlador: Clase CalcServlet.java
 
   Este controlador, básicamente realiza:
   
-  * Lectura de parámetros de la forma del página HTML
-  * Realiza algun procesamiento
-  * Envia la respuesta HTML al browser.
+  ** Lectura de parámetros de la forma del página HTML
+  ** Realiza algun procesamiento
+  ** Envia la respuesta HTML al browser.
   
- **Modelo:** Se tendra un objeto NumComplejo.java que tendrá la lógica de negocio y datos.
+ * Modelo: Se tendra un objeto NumComplejo.java que tendrá la lógica de negocio y datos.
  
 # 3. Crear el proyecto en GitHub (este es el repo del proyecto):
 
