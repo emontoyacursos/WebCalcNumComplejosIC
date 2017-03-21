@@ -17,9 +17,9 @@ Se utilizará el patrón MVC teniendo:
 
   Este controlador, básicamente realiza:
   
-  ** Lectura de parámetros de la forma del página HTML
-  ** Realiza algun procesamiento
-  ** Envia la respuesta HTML al browser.
+    * Lectura de parámetros de la forma del página HTML
+    * Realiza algun procesamiento
+    * Envia la respuesta HTML al browser.
   
  * Modelo: Se tendra un objeto NumComplejo.java que tendrá la lógica de negocio y datos.
  
