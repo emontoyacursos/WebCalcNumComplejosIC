@@ -265,3 +265,53 @@ Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" e
 		assertEquals(i_expected, c3.getI());
 	}
 
+## con generación de código, la implementación queda asi:
+
+	public class NumComplejos {
+
+	public NumComplejos(int i, int j) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public NumComplejos add(NumComplejos c2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getR() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getI() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	}
+
+## con refactoring:
+
+	public class NumComplejos {
+		float r, i;
+
+	public NumComplejos(float r, float i) {
+		this.r = r;
+		this.i = i;
+	}
+
+	public NumComplejos add(NumComplejos c2) {
+		rtmp = r + c2.getR();
+		itmp = i + c2.getI();
+		NumComplejos r = new NumComplejos(rtmp, itmp);
+		return r;
+	}
+
+	public float getR() {
+		return r;
+	}
+
+	public float getI() {
+		return i
+	}
+
+	}
