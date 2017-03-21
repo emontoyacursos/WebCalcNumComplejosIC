@@ -1,13 +1,13 @@
-# WebCalcNumComplejosIC #
-## Autor: Edwin Montoya - emontoya@eafit.edu.co, Universidad EAFIT ##
+# WebCalcNumComplejosIC
+## Autor: Edwin Montoya - emontoya@eafit.edu.co, Universidad EAFIT
 
 ## Caso de estudio de Integración Continua, TDD, Maven, AppsWeb, QA, PaaS
 
-# 1. Caso de Estudio:#
+# 1. Caso de Estudio:
 
 Se desea desarrollar una app web que permita realizar operaciones básicas con números completos (suma, resta, multiplicación y división)
 
-#2. Esta aplicación Web se desarrollará en Java (1.8) con Servlets (3.1) #
+# 2. Esta aplicación Web se desarrollará en Java (1.8) con Servlets (3.1) 
 
 Se utilizará el patrón MVC teniendo:
 
@@ -23,11 +23,11 @@ Se utilizará el patrón MVC teniendo:
   
  **Modelo:** Se tendra un objeto NumComplejo.java que tendrá la lógica de negocio y datos.
  
-#3. Crear el proyecto en GitHub (este es el repo del proyecto):
+# 3. Crear el proyecto en GitHub (este es el repo del proyecto):
 
 [GitHub https://github.com/emontoyacursos/WebCalcNumComplejosIC.git](https://github.com/emontoyacursos/WebCalcNumComplejosIC.git)
  
-#4. Ambiente de Desarrollo:
+# 4. Ambiente de Desarrollo:
 
 * Se utilizará NetBeans 8.2 + tomcat 8.0.27 para pruebas locales del desarrollador
 * Se utilizará MAVEN
@@ -52,11 +52,11 @@ tener en cuenta:
 se recomienda actualizar el PATH y MAVEN_HOME de forma permanente en el sistema
 (ej: linux, actualizar el /etc/profile o windows: propiedades avanzadas del sistema->variables de entorno)
 
-#5. Instalar las herramientas de git
+# 5. Instalar las herramientas de git
 
     $ sudo yum install git
     
-#6. Despliegue en nube PaaS HEROKU#
+# 6. Despliegue en nube PaaS HEROKU#
 
 ##heroku-cli##
     
@@ -77,7 +77,7 @@ crear una app:
       Creating webcalcnumcomplejosic... done
       https://webcalcnumcomplejosic.herokuapp.com/ | https://git.heroku.com/webcalcnumcomplejosic.git
       
-#7. Crear el esqueleto de la aplicación con Maven:
+# 7. Crear el esqueleto de la aplicación con Maven:
 
     $ mvn archetype:generate -DgroupId=co.edu.eafit -DartifactId=webcalcnumcomplejosic -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
@@ -107,14 +107,14 @@ pom.xml:
       </build>
     </project>
 
-#8. Build de la app -> generar el war para ser desplegado en tomcat y heroku:
+# 8. Build de la app -> generar el war para ser desplegado en tomcat y heroku:
 
     $ cd webcalcnumcomplejosic
     $ mvn install
     
     target/webcalcnumcomplejosic.war
 
-#9. Adicionar el pluging de heroku a Maven (al pom.xml) para desplegar la app en Heroku.
+# 9. Adicionar el pluging de heroku a Maven (al pom.xml) para desplegar la app en Heroku.
 
 Ver documentación: https://devcenter.heroku.com/articles/deploying-java-applications-with-the-heroku-maven-plugin
 
