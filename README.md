@@ -112,14 +112,14 @@ Se tiene un servidor tomcat instalado en: 10.131.137.239:8080
 
 ## En el Servidor Tomcat (10.131.137.239):
 
-Se tiene creado el usuario "tomcat", password "s3cret", con los roles: "manager-gui" y "manager-script"
+Se debe crear el usuario "tomcat", password "s3cret", con los roles: "manager-gui" y "manager-script":
 
     // file: TOMCAT_HOME/conf/tomcat-users.xml
     <role rolename="manager-gui"/>
     <role rolename="manager-script"/> 
     <user username="tomcat" password="s3cret" roles="manager-gui,manager-script"/>
 
-## En la maquina de Desarrollo, o desde donde invoque Maven:
+## En la máquina de Desarrollo, o desde donde invoque Maven:
 
 Adicione las credenciales del servidor en MAVEN_HOME/conf/settings.xml:
 
