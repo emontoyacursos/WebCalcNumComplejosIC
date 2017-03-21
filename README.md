@@ -247,17 +247,15 @@ Ejecuta el miniservidor local:
     
     desde un browser, conentese a: http://localhost:8080
 
-Para desplegar en Heroku, debe crear un "Procfile":
+## realizar el Deployment a heroku:
 
-Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" en la raiz del proyecto. Cree una linea:
+Crear un archivo "Procfile" en ./webcalcnumcomplejosic/:
 
+    $ cd webcalcnumcomplejosic
+    $ vim Procfile
     web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
 
-## realizar el Deployment a heroku:
- 
-    $ cd webcalcnumcomplejosic
     $ mvn clean heroku:deploy
-
 
 # 9. TDD
 
