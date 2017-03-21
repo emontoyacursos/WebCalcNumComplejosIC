@@ -262,6 +262,6 @@ Declare como quiere que su aplicación ejecute colocando el archivo "Procfile" e
 		int r_expected = 13;
 		int i_expected = 0;
 		assertEquals(r_expected, c3.getR());
-		assertEquals(r_expected, c3.getI());
+		assertEquals(i_expected, c3.getI());
 	}
 
