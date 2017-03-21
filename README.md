@@ -58,6 +58,8 @@ se recomienda actualizar el PATH y MAVEN_HOME de forma permanente en el sistema
 
 # 6. Crear el esqueleto de la aplicación con Maven:
 
+## Crear la app web:
+
     $ mvn archetype:generate -DgroupId=co.edu.eafit -DartifactId=webcalcnumcomplejosic -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
 Este esqueleto, crea una aplicación ejemplo en Java, con una página web "Hello, World".
@@ -86,7 +88,7 @@ pom.xml:
       </build>
     </project>
 
-Adicionar la dependencia de servlets, adicione en el pom.xml la siguiente dependencia:
+## Adicionar la dependencia de servlets en el pom.xml:
 
     <dependencies>
         <dependency>
@@ -96,6 +98,13 @@ Adicionar la dependencia de servlets, adicione en el pom.xml la siguiente depend
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+## Build de la app -> generar el war para ser desplegado en tomcat y heroku:
+
+    $ cd webcalcnumcomplejosic
+    $ mvn package
+    
+    target/webcalcnumcomplejosic.war
 
 # 6. Despliegue en nube PaaS HEROKU#
 
@@ -118,13 +127,6 @@ crear una app:
       Creating webcalcnumcomplejosic... done
       https://webcalcnumcomplejosic.herokuapp.com/ | https://git.heroku.com/webcalcnumcomplejosic.git
       
-
-# 8. Build de la app -> generar el war para ser desplegado en tomcat y heroku:
-
-    $ cd webcalcnumcomplejosic
-    $ mvn install
-    
-    target/webcalcnumcomplejosic.war
 
 ## Adicionar el pluging de heroku a Maven (al pom.xml) para desplegar la app en Heroku.
 
