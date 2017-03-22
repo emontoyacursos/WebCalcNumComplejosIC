@@ -272,7 +272,7 @@ Crear un archivo "Procfile" en ./webcalcnumcomplejosic/:
 		assertEquals(i_expected, c3.getI());
 	}
 
-## con generación de código, la implementación queda asi:
+## con generación AUTOMÁTICA de código, la implementación queda asi:
 
 	public class NumComplejos {
 
