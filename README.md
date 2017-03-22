@@ -339,3 +339,40 @@ Crear un archivo "Procfile" en ./webcalcnumcomplejosic/:
 	}
 
 	}
+	
+# 10. Creación de proyecto para IC en Jenkins
+
+1. Logearse con user/pass de la VPN en:
+
+	http://jenkins.dis.eafit.edu.co
+	
+2. Crear un proyecto (New Item), especificando:
+	Enter an item name: "nombre grupo / producto"
+	"Freestyle project"
+	
+3.  Source Code Management: Definir una fuente desde el repositorio github, como ejemplo se tiene este proyecto:
+
+	GIT: https://github.com/emontoyacursos/WebCalcNumComplejosIC.git
+	
+4. Definir un "Build"
+
+	Add Build Step -> Invoke top-level Maven Targets
+	
+	alli le pide el goal, el cual normalmente es:
+	
+	* Package
+	
+	Agrege otro Add Build Step -> Invoke top-level Maven Targets, para Goal: tomcat7:redeploy
+	
+	Agrege otro Add Build Step -> Invoke top-level Maven Targets, para Goal: heroky:deploy-war
+	
+		Aca tiene que inyectar una variable de ambiente con HEROKU_API_KEY con la clave del usuario, se obtiene asi:
+		
+		$ heroku auth:token
+		1234-ae45-12313-4443131314
+		
+5. Salve el script
+6. ejecute el script, si recibe errores (boton en rojo), entre a la Console, si el boton pasa a azul, el script fue exitoso.
+
+	
+	
