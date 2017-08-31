@@ -25,7 +25,7 @@ Se utilizará el patrón MVC teniendo:
  
 # 3. Crear el proyecto en GitHub (este es el repo del proyecto):
 
-[GitHub https://github.com/emontoyacursos/WebCalcNumComplejosIC.git](https://github.com/emontoyacursos/WebCalcNumComplejosIC.git)
+[GitHub https://github.com/st0258eafit/WebCalcNumComplejosIC.git](https://github.com/st0258eafit/WebCalcNumComplejosIC.git)
  
 # 4. Ambiente de Desarrollo:
 
